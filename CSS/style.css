@@ -1,36 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Head */
+header {
+  background-color: #ffe4c4;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  
+}
+
+
+/* Body */
+
+#hero { /* the white line is still there? Not sure why*/
+  background-color: #d5c4ff;
+  padding: 20px;
+  display: inline-block;
+  width: 100%;
+}
+
+
 body {
-    background-color: rgb(196, 220, 196);
+    background-color: white;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 16px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
     color: black;
+
 }
 
 h1, h2, h3, h4 {
-    line-height: 1.4;
+  line-height: 1.4;
 }
-  h1 {
-    font-size: 2.75em;
-    font-weight: 700;
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
 }
-  
-  h2 {
-    font-size: 2.25em;
-    font-weight: 700;
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
 }
-  
-  h3 {
-    font-size: 1.75em;
-    font-weight: 400;
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
 }
-  h4 {
-    font-size: 1.35em;
-    font-weight: 400;
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
 }
-  img {
-    width: 100%;
-}
+
 a {
     color: blue;
     text-decoration: none; /* No underlining */
@@ -47,7 +70,7 @@ a {
     color: green;
 }
 .button {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: green;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
@@ -70,3 +93,53 @@ a {
     background-color: green;
     color: #ffffff;
 }
+
+
+
+/* layout styling */
+.container {
+  padding: 0 20px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+  /*width: 100%;   if i add this the nav bar reverts to list*/ 
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+nav > ul > li > a:visited {
+  color: rgb(4, 72, 4);
+}
+nav > ul > li > a:hover {
+color: #cc6540;
+    text-decoration: underline;
+}
+nav > ul > li > a:active{
+  color: green;
+}
+
+/*
+.css-box-shadow{  /* no changes made ? */
+	/*start ------------
+	width: [object Object]px; 
+	height: [object Object]px; 
+	background: #abb1ae; 
+	border: solid #6c967b 1px; 
+	box-shadow: 0 13px 11px rgba(0, 0, 0, 0.3)  ; 
+	-webkit-box-shadow: 0 13px 11px rgba(0, 0, 0, 0.3)  ; 
+	-moz-box-shadow: 0 13px 11px rgba(0, 0, 0, 0.3)  ; 
+} 
+*/
+
+
+
