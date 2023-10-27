@@ -6,16 +6,22 @@
 header {
   background-color: #ffe4c4;
   padding: 20px;
-  margin: 10px;
   text-align: center;
+  position: relative;
+  width: 100%;
+  border: solid #BDBDBD 1px; 
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ;  
   
 }
 
 
+
 /* Body */
 
-#hero { /* the white line is still there? Not sure why*/
-  background-color: #d5c4ff;
+#hero { 
+  background-color: #ffe4c4;
   padding: 20px;
   display: inline-block;
   width: 100%;
@@ -29,6 +35,7 @@ body {
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
     color: black;
+    text-align: right-aligned;
 
 }
 
@@ -94,7 +101,30 @@ a {
     color: #ffffff;
 }
 
+.work-imgs {
+  width: 25%;
+  height: auto;
+}
 
+.linked-in {
+  width: 10%;
+  height: auto;
+}
+
+.headshot{
+  height: auto;
+  width: 15%; 
+}
+
+.guru-project-page {
+  width: 40%;
+  height: auto;
+}
+.guru-fid{
+  width: 25%;
+  height: auto;
+  margin: 20px;
+}
 
 /* layout styling */
 .container {
@@ -128,18 +158,7 @@ nav > ul > li > a:active{
   color: green;
 }
 
-/*
-.css-box-shadow{  /* no changes made ? */
-	/*start ------------
-	width: [object Object]px; 
-	height: [object Object]px; 
-	background: #abb1ae; 
-	border: solid #6c967b 1px; 
-	box-shadow: 0 13px 11px rgba(0, 0, 0, 0.3)  ; 
-	-webkit-box-shadow: 0 13px 11px rgba(0, 0, 0, 0.3)  ; 
-	-moz-box-shadow: 0 13px 11px rgba(0, 0, 0, 0.3)  ; 
-} 
-*/
+
 
 
 

@@ -12,21 +12,23 @@
     </head>
 
     <body>
-        <header id="full-name">
-            <div>
-            <h1>Victoria Noel</h1>
+        <header>
+            <div class="container">
+              <div id="name">
+                <h1>Victoria Noel</h1>
+              </div>
             <nav>
-              <ul> 
-                 <li><a href="index.html">Work</a></li>
-                 <li><a href="about.html">About</a></li>
-                 <li><a href="#contact">Contact</a></li>
+              <ul class="nav"> 
+                  <li><a href="index.html">Work</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
               </ul>
             </nav>
             </div>
         </header>
         
         <main>
-          <div><!--Orange section-->
+          <div class="container"><!--Orange section-->
             <div><!--Yellow section-->
                 <div>
                     <h1>About</h1>
@@ -34,7 +36,7 @@
                 <div>
                     <picture>
                         <source srcset="img/headshot.png" media="(max-width:767px)">
-                        <img src="img/headshot.png" alt="My Headshot">
+                        <img class="headshot" src="img/headshot.png" alt="My Headshot">
                     </picture>
                 </div>
                 <div> <!--green section-->
@@ -76,7 +78,8 @@
           </div><!--Orange-->
         </main>
 
-        <footer id="contact"> 
+        <footer 
+          <div class= "container" id="contact">
             <a href="#contact">Contact</a>
             <div>
                 <h2>Get in Touch</h2>
@@ -88,15 +91,17 @@
                 <a href="victoria.noel33@gmail.com" class="button contact">send me an email</a>
             </div>
             <div>
+              <div class="row linked-in">
                   <!--Social Media Layout and Placeholders-->
 
                   <?xml version="1.0" ?><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                     <defs><style>.cls-1{fill:#007fb5;}.cls-2{fill:#fff;}</style></defs><title/><g data-name="14-linkedin" id="_14-linkedin"><rect class="cls-1" height="64" rx="11.2" ry="11.2" width="64"/>
                       <rect class="cls-2" height="32.72" width="9.03" x="8.99" y="23.54"/>
                       <path class="cls-2" d="M48.2,23.54C41.54,21,36.72,25.3,34.66,27.7V23.54h-9V56.26h9V39a8.45,8.45,0,0,1,2.23-5.92,4.75,4.75,0,0,1,3.41-1.67A5.42,5.42,0,0,1,44.24,33a6.13,6.13,0,0,1,1.7,4.35V56.26H56.1V36S57.23,26.92,48.2,23.54Z"/><circle class="cls-2" cx="13.5" cy="13.38" r="5.64"/></g></svg>
-
+              </div>
             </div>
             <p>Copyright Victoria Noel 2023</p>
+          </div>
         </footer>
 
     </body>
