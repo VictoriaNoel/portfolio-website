@@ -108,7 +108,7 @@ a {
 }
 
 .work-imgs {
-  width: 95%;
+  width: 85%;
   height: auto;
 }
 
@@ -143,15 +143,25 @@ a {
 .container {
   padding: 0 20px;
 }
+
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
-
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 nav > ul {
   list-style-type: none;
   padding: 0;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+
 }
+
 nav > ul > li {
   display: inline-block;
   width: auto;   
@@ -173,9 +183,7 @@ nav > ul > li > a:active{
   color: green;
 }
 
-[class*="col-"] {
-  float: left;
-}
+
 
 .sun {
   animation-duration: 4s;
@@ -213,6 +221,9 @@ nav > ul > li > a:active{
   to {transform: translate(100px, 48px);}
 }
 
+[class*="col-"] {
+  float: left;
+}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -227,11 +238,7 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
     margin-top: 4px;
-  }/* when I add this the nav bar is not in line with my name, I'm not sure why*/
-
-  /*main {
-    margin-top: ;
-  } I am not sure how to make the white bar go away */
+  }
 
   .col-md-6 {
     width: 50%;
@@ -252,17 +259,15 @@ Large devices (1024px or larger)
     width: auto;
     float: right;
     margin-top: 4px;
-  }/* when I add this the nav bar is not in line with my name, I'm not sure why*/
-
-  /*main {
-    margin-top: ;
-  } I am not sure how to make the white bar go away */
+  }
 
   .col-md-7 {
     width: 60%;
+   
   }
   .col-md-5 {
     width: 40%;
+    
   }
 
   .container {
