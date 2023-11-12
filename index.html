@@ -8,20 +8,24 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:300,400,700" rel="stylesheet"> 
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://kit.fontawesome.com/0a3529599f.js" crossorigin="anonymous"></script>
       <title> Victoria Noel UX Designer </title>
     </head>
 
     <body>
         <header>
-            <div class="container">
-              <h1 class="logo">Victoria</h1>
-              <nav>
-                <ul class="nav"> 
-                  <li><a href="index.html">Work</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                </ul>
-              </nav>
+          <div class="container">
+            <div class="navtoggle" id="myNavtoggle">
+                <h1 class="logo">Victoria</h1>
+                <nav>
+                  <ul class="nav"> 
+                    <li><a href="index.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                  </ul>
+                </nav>
+              </div>
             </div>
         </header>
         
@@ -715,6 +719,7 @@
             <p>Copyright Victoria Noel 2023</p>
           </div>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
     </body>
 </html>

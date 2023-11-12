@@ -5,7 +5,7 @@
 /* Head */
 header {
   background-color: #ffe4c4;
-  padding: 20px;
+  padding: 10px 0 4px;
   text-align: center;
   position: relative;
   width: 100%;
@@ -63,7 +63,7 @@ h4 {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 a {
     color: blue;
@@ -156,16 +156,10 @@ a {
 nav > ul {
   list-style-type: none;
   padding: 0;
-  position: absolute;
-  right: 50px;
-  top: 50px;
+  margin: 0;
 
 }
 
-nav > ul > li {
-  display: inline-block;
-  width: auto;   
-}
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
@@ -183,6 +177,34 @@ nav > ul > li > a:active{
   color: green;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 
 
 .sun {
@@ -243,7 +265,26 @@ Medium devices (640px and larger)
   .col-md-6 {
     width: 50%;
   }
+  .logo {
+    max-width: 250px;
+  }
 
+  nav > ul > li {
+    display: inline-block;
+    width: auto;   
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
 }
 
 /* ==============================
