@@ -81,7 +81,7 @@ a {
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: rgb(169, 216, 169);
-  color: #ffffff; /* needed to override the default link color */
+  color: darkgreen; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
