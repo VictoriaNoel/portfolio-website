@@ -4,7 +4,7 @@
 
 /* Head */
 header {
-  background-color: #ffe4c4;
+  background-color: rgb(169, 216, 169);
   padding: 10px 0 4px;
   text-align: center;
   position: relative;
@@ -21,7 +21,7 @@ header {
 /* Body */
 
 #hero { 
-  background-color: #ffe4c4;
+  background-color: rgb(169, 216, 169);
   padding: 20px;
   display: inline-block;
   width: 100%;
@@ -66,7 +66,7 @@ h4 {
   max-width: 150px;
 }
 a {
-    color: blue;
+    color: black;
     text-decoration: none; /* No underlining */
   }
   a:hover,
@@ -82,7 +82,7 @@ a {
 }
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: green;
+  background-color: rgb(169, 216, 169);
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
@@ -98,7 +98,7 @@ a {
 }
 .button.contact {
     background-color: transparent;
-    color: green;
+    color: #008000;
     text-transform: uppercase;
     border: 2px solid darkgreen;
   }
@@ -108,27 +108,32 @@ a {
 }
 
 .work-imgs {
-  width: 85%;
+  width: 100%;
   height: auto;
 }
 
-.linked-in {
-  width: 10%;
+.fa-brands fa-linkedin { /* how do i edit the linked in icon if i can't call the class in CSS*/
+  width: 20%;
   height: auto;
 }
 
 .headshot{
   height: auto;
-  width: 50%; 
-  
+  width: 100%; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto
 }
 
-.guru-project-page {
-  width: 40%;
+.guru-project-page { 
+  width: 100%;
   height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
 }
 .guru-fid{
-  width: 25%;
+  width: 100%;
   height: auto;
   margin: 20px;
 }
@@ -257,9 +262,11 @@ Medium devices (640px and larger)
   }
 
   nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: none;
     width: auto;
-    float: right;
-    margin-top: 4px;
   }
 
   .col-md-6 {
@@ -284,6 +291,31 @@ Medium devices (640px and larger)
 
   nav > ul {
     margin: 1em 0;
+  }
+  .work-imgs {
+    width: 85%;
+    height: auto;
+  }
+
+  .headshot{
+    height: auto;
+    width: 50%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+  
+  .guru-project-page { 
+    width: 40%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+  .guru-fid{
+    width: 25%;
+    height: auto;
+    margin: 20px;
   }
 }
 
@@ -316,6 +348,32 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
+
+  .work-imgs {
+    width: 85%;
+    height: auto;
+  }
+
+  .headshot{
+    height: auto;
+    width: 50%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+  
+  .guru-project-page { 
+    width: 40%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+  .guru-fid{
+    width: 25%;
+    height: auto;
+    margin: 20px;
+  }
 }
 /* ==============================
 X-large devices (1440px or larger)
@@ -326,4 +384,31 @@ X-large devices (1440px or larger)
     margin-left: auto;
     margin-right: auto;
   }
+
+  .work-imgs {
+    width: 85%;
+    height: auto;
+  }
+
+  .headshot{
+    height: auto;
+    width: 50%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+  
+  .guru-project-page { 
+    width: 40%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+  .guru-fid{
+    width: 25%;
+    height: auto;
+    margin: 20px;
+  }
+
 }
